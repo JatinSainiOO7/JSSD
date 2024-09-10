@@ -4,14 +4,16 @@ import { createRoot } from 'react-dom/client'
 // components are there_______
 import Navbar from './components/navbar.jsx';
 import Hero from './components/hero.jsx';
-import About from './components/about.jsx';
+import Work from './components/work.jsx';
 import Friend from './components/friend.jsx';
+import Footer from  './components/footer.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
     <Hero />
-    <About />
+    <Work />
     <Friend />
+    <Footer />
   </StrictMode>,
 )
