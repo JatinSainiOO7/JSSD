@@ -1,10 +1,12 @@
 import '../styles/components.css';
-
+import projectimg from'../assets/images/projecttemimg.jpg'
 const Projects = () => {
   return (
     <>
     <section className="project-card ">
-      <div className="project-img"></div>
+      <div className="project">
+        <img className='project-img' src={projectimg} />
+      </div>
       <div className="project-title">
         <p>Perlin Noise Background</p>
       </div>

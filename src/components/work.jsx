@@ -21,7 +21,6 @@ const worksection = () => {
         <Projects />
         <Projects />
         <Projects />
-        <Projects />
       </section>
     </section>
     </>

@@ -131,7 +131,7 @@ a{
 
 .hero-section {
   width: 100%;
-  height: 60rem;
+  height: 100vh;
 
   .hero-size {
     width: 50%;
@@ -139,8 +139,10 @@ a{
   }
 
   .p5-container {
+    width: 50%;
     background-color: var(--p5-continer-background-color);
-    background-image: url(https://sothebys-com.brightspotcdn.com/6f/86/833c01cd42c6aa1dfda6948fe5e1/fidenza.jpg);
+    background-image: url(../assets/images/heroimg3.jpg);
+    background-position: center;
     background-size: cover;
     background-position: center;
   }
@@ -149,13 +151,22 @@ a{
     background-color: var(--logo-hover-color);
 
     .hero {
-      width: 100%;
-      margin: 1%;
+      margin: 2%;
       margin-left: 2%;
       color: white;
-      font-size: 6rem;
-      font-weight: 600;
+      line-height: 1.3;
+      font-size: 10vh;
+      font-weight: 450;
       font-kerning: var(--light-color);
+
+      .j {
+        color: #f0f800;
+        transition: ease-in-out 0.4s;
+      }
+      .p5 {
+        color: rgb(255, 15, 115);
+        transition: ease-in-out 0.4s;
+      }
     }
 
     .hero-buttons {
@@ -170,20 +181,18 @@ a{
       font-size: 1.5rem;
       cursor: pointer;
       color: var(--logo-hover-color);
-      background: rgba(255, 255, 255, 0.903);
+      background: rgba(176, 215, 255, 0.903);
       padding: 8px 20px;
       border-radius: 30px;
       min-width: 160px;
       text-align: center;
       border: 2px solid;
       font-weight: normal !important;
-      transition: all 0.2s ease;
+      transition: all 0.5s ease;
     }
 
     .hero-button:hover {
-      border: solid 2px rgb(0, 0, 0);
-      border-style: dashed;
-      box-shadow: inset 0 0 10px #0000f8;
+      background-color: white;
     }
   }
 }

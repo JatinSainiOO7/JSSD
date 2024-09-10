@@ -1,30 +1,22 @@
 import "../styles/components.css";
 
 const sidebar = () => {
+
+  
+let projects_list = ["p5.js", "React", "Three.js", "Api_app", "portfolios", "Open-Sorce", "C++", "Gsap", "Fractals"];
+// let projects_list = [];
   return (
     <>
       <div className="sidebar-container sticky-top ">
-        <div className="sector button trcc-radio-project-filter">
-          <p>All</p>
-        </div>
-        <div className="sector button trcc-radio-project-filter">
-          <p>p5.js</p>
-        </div>
-        <div className="sector button trcc-radio-project-filter">
-          <p>React</p>
-        </div>
-        <div className="sector button trcc-radio-project-filter">
-          <p>Three.js</p>
-        </div>
-        <div className="sector button trcc-radio-project-filter">
-          <p>Api</p>
-        </div>
-        <div className="sector button trcc-radio-project-filter">
-          <p>Portfolio</p>
-        </div>
-        <div className="sector button trcc-radio-project-filter">
-          <p>E-comerss</p>
-        </div>
+      <div className="sector button trcc-radio-project-filter">
+              <p>All</p>
+          </div>
+        {projects_list.length === 0 && <h1>List was Emty</h1>}
+      {projects_list.map((item) => (
+          <div key={item} className="sector button trcc-radio-project-filter">
+              <p>{item}</p>
+          </div>
+        ))}
       </div>
     </>
   );
