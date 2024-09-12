@@ -1,6 +1,7 @@
 import '../styles/application.css';
 import Sidebar from '../components/sidebar';
 import Projects from '../components/projects';
+import projects from '../components/project_data.js'
 const worksection = () => {
   return (
     <>
@@ -10,17 +11,7 @@ const worksection = () => {
         <Sidebar />
       </section>
       <section className="work-hero-container">
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
+        <Projects project = {projects} />
       </section>
     </section>
     </>
