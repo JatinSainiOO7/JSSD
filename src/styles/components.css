@@ -2,6 +2,11 @@
 /* SideBar-container section style was there:-
 */
 
+button{
+  text-decoration: none;
+  background-color: none;
+  border: none;
+}
 .sidebar-container {
   width: 100%;
   height: auto;
@@ -41,7 +46,6 @@
 .button {
   width: fit-content;
   display: inline-block;
-
   font-size: large;
   cursor: pointer;
   color: black;
@@ -60,6 +64,10 @@
   color: white;
 }
 
+.active:active {
+  background-color: #000000;
+  color: white;
+}
 
 
 /* Projects-container section style was there:-
