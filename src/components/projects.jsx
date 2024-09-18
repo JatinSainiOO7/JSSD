@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import '../styles/components.css';
 // import projectimg from'../assets/images/projecttemimg.jpg'
 const Projects = ({project}) => {
+
   return (
     <div>
       {

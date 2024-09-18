@@ -1,10 +1,10 @@
 import '../styles/application.css';
 import '../styles/components.css';
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/sidebar.jsx'
 import Projects from '../components/projects';
 import projects from '../components/project_data.js'
 const worksection = () => {
-  var buttonId = 'react';
+  var buttonId = 'p5';
   // var newprojectItems = [];
   const filteredProjectId = projects.filter((item) => item.projectId === buttonId);
   var filteredProject = filteredProjectId.map((item) => filteredProject  = item);

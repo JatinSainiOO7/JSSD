@@ -1,14 +1,11 @@
-
-import '../styles/application.css';
+import "../styles/application.css";
 
 const aboutsection = () => {
-
-  return (  
-  <>
-  <section className="about-section">
-    
-  </section>
-  </>
+  return (
+    <>
+      <section className="about-section">
+      </section>
+    </>
   );
 };
 
