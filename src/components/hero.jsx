@@ -7,7 +7,7 @@ const herosection = () => {
       <section className="hero-container hero-size">
         <div className="hero">
           <p>
-          Hi, my name is <a className="j" href="/">Jatin</a> and I am Front-End Developer and Learn  <a className="p5" href="/">p5.js</a>..
+          Hi, my name is Jatin Saini and I am Front-End Developer and Learn p5.js..
           </p>
         </div>
         <div className="hero-buttons , display-flex">
