@@ -1,12 +1,13 @@
 import "../styles/components.css";
 
-const sidebar = () => {
-let projects_list = ["All","p5.js", "React", "Three.js", "Api_app", "portfolios", "Open-Sorce", "C++", "Gsap", "Fractals"];
+const sidebar = ({projects_list,handleButton}) => {
+
   return (
     <>
       <div className="sidebar-container sticky-top ">
       {projects_list.map((item) => (
-          <button key={item} className="sector button trcc-radio-project-filter radio-button">{item}</button>
+          <button key={item} className="sector button trcc-radio-project-filter radio-button"
+          onClick={handleButton(item)}>{item}</button>
         ))}
       </div>
     </>
