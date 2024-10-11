@@ -1,4 +1,3 @@
-// src/CircleGrid.js
 // import React from 'react';
 import { P5Wrapper } from 'react-p5';
 
@@ -10,7 +9,7 @@ const CircleGrid = () => {
 
   const sketch = (p) => {
     p.setup = () => {
-      p.createCanvas(200,200, p.WEBGL);  // Use WEBGL for 3D rendering
+      p.createCanvas(400, 400, p.WEBGL);  // Adjust canvas size as needed
       p.camera(0, 0, (n * spacing) * 1.5);  // Position the camera further back
     };
 
@@ -26,7 +25,6 @@ const CircleGrid = () => {
         for (let j = 0; j < n; j++) {
           const x = i * spacing - centerX;  // Center X position
           const y = j * spacing - centerY;  // Center Y position
-        //   const z = 0;  // Z position fixed on the plane
 
           const noiseVal = p.noise(i * noiseScale, j * noiseScale, time);
           const h = p.map(noiseVal, 0, 1, 50, 300);  // Map noise value to height
@@ -48,7 +46,7 @@ const CircleGrid = () => {
   };
 
   return (
-     <P5Wrapper sketch={sketch} />
+    < P5Wrapper sketch={sketch} />
   );
 };
 

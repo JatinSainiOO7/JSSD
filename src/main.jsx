@@ -1,10 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';  // Make sure this path is correct
+// import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App'; // Adjust the path as needed
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Get the root element
+const container = document.getElementById('root');
+
+// Ensure the container exists before trying to create the root
+if (container) {
+    const root = createRoot(container);
+    root.render(<App />);
+} else {
+    console.error('Target container not found.');
+}
