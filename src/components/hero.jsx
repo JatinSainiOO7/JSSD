@@ -1,9 +1,12 @@
 import "../styles/application.css";
+// import Box from '../p5/box.js'
 
 const herosection = () => {
   return (
     <section className="hero-section display-flex">
-      <section className="p5-container hero-size"></section>
+      <section className="p5-container hero-size">
+        {/* <Box /> */}
+      </section>
       <section className="hero-container hero-size">
         <div className="hero">
           <p>
