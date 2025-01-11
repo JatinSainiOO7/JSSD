@@ -1,0 +1,236 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+
+        li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+
+    .mobile-menu-icon {
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        list-style: none;
+
+        li a {
+            padding: 0.5rem 0;
+            text-decoration: none;
+            color: #333;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+
+
+
+
+
+.home {
+  font-family: "Arial", sans-serif;
+
+  .hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    animation: fadeIn 2s ease-in;
+
+    .hero-content {
+      max-width: 600px;
+      margin: 0 auto;
+
+      .hero-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        .highlight {
+          color: #ffcc00;
+          animation: pulse 1.5s infinite;
+        }
+      }
+
+      .hero-description {
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      .cta-button {
+        background-color: #ffcc00;
+        color: #333;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+          background-color: #ffdd44;
+        }
+      }
+    }
+  }
+
+  .features {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+
+      .card {
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        animation: slideIn 1s ease-in-out;
+
+        h3 {
+          font-size: 1.5rem;
+          color: #4facfe;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+          transition: transform 0.3s;
+        }
+      }
+    }
+  }
+
+  .call-to-action {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #ffcc00;
+      color: #333;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: #ffdd44;
+      }
+    }
+  }
+
+  // Animations
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+}
